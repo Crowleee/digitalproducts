@@ -4,9 +4,8 @@ $(document).ready(() => {
     window.initMap = function() {
 		let map;
         	map = new google.maps.Map(document.getElementById('map'), {
-	          center: {lat: -7.9369434, lng: 112.6263252},
+              center: {lat: -7.9369434, lng: 112.6263252},
 	          zoom: 14,
-            disableDefaultUI: true,
             styles: [
                 {
                   "featureType": "administrative",
