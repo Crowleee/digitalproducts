@@ -249,7 +249,12 @@ body {
   justify-content: space-evenly;
   min-width: 25%;
   padding: 10px;
-  background-color: #9f9acf; }
+  background-color: #9f9acf;
+  border-right: 20px solid #ebebeb;
+  border-left: 20px solid #ebebeb; }
+  .socials--footer {
+    border: none;
+    padding: 0; }
   .socials__item {
     text-decoration: none;
     border-radius: 50%;
@@ -428,33 +433,55 @@ body {
     overflow: hidden; }
 
 .team {
-  background-color: #ebebeb;
-  padding-bottom: 100px; }
+  background-color: #ebebeb; }
   .team__title {
     font-family: "ProximaNova", sans-serif;
     font-size: 3.6rem;
     font-weight: 400;
     color: #665f60;
     line-height: 1; }
+  .team__card {
+    margin: 0;
+    height: 60vh;
+    margin-right: 20px; }
+  .team__card-wrap {
+    position: relative;
+    height: 30%; }
+  .team__card-img {
+    width: 75%;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    -o-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%); }
   .team__card-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 20px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 25% 10px 10px;
+    height: 40%;
     width: 100%;
-    position: relative; }
-  .team__card-img {
-    border-radius: 50%; }
+    background-color: #fefefb;
+    border-right: 20px solid #ebebeb;
+    border-left: 20px solid #ebebeb; }
   .team__card-title {
     font-family: "ProximaNova", sans-serif;
     font-size: 2.4rem;
@@ -462,7 +489,9 @@ body {
     color: #9f9acf;
     line-height: 1; }
   .team__card-position {
-    font-style: italic; }
+    font-style: italic;
+    max-height: 30px;
+    overflow: hidden; }
 
 .map {
   height: 900px;
