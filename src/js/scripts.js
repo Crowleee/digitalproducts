@@ -74,7 +74,7 @@ $(document).ready(() => {
 	var marker = new google.maps.Marker({
 	    position: {lat: -7.925899, lng: 112.636508},
 	    map: map,
-	    icon:'../img/pin.png'
+	    icon:'../img/Pin.png'
   });
 
 }
